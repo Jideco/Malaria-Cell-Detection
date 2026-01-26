@@ -20,7 +20,7 @@
 ---
 ## Dataset
 **Source**: National Institutes of Health (NIH) - Malaria Cell Images Dataset:
-https://ceb.nlm.nih.gov/repositories/malaria-datasets/
+https://ceb.nlm.nih.gov/repositories/malaria-datasets/  OR https://www.kaggle.com/datasets/iarunava/cell-images-for-detecting-malaria/data  
 
 **Description**:
 - **Total Images**: 27,558 microscopic images of red blood cells
@@ -177,7 +177,7 @@ The project includes a user-friendly Streamlit interface for malaria cell detect
 - See confidence score and probability distribution
 - Compare with example images in the gallery
 
-**The Streamlit app is available at** http://localhost:8501
+**The Streamlit app is available at** https://malaria-cell-detection-transfer-learning-opabode.streamlit.app/
 
 ---
 ## Project Limitations & Future Work
@@ -228,3 +228,4 @@ Email: jideopabode@gmail.com
 ---
 ## License
 This project is for educational and research purposes only. The model should NOT be used for clinical diagnosis without proper medical validation and regulatory approval.
+
