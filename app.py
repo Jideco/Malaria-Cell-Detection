@@ -6,7 +6,7 @@ from PIL import Image
 # Page Config
 st.set_page_config(page_title="Malaria Cell Classifier", page_icon="🔬")
 st.title("🔬 Malaria Cell Classifier")
-st.write("Upload a blood cell image (PNG/JPG) to detect if it is 'Parasitized' or 'Uninfected'.Get the data set from the [LHNCBC Malaria Dataset](https://lhncbc.nlm.nih.gov/LHC-downloads/downloads.html#malaria-datasets).")
+st.write("Upload a blood cell image (PNG/JPG) to detect if it is 'Parasitized' or 'Uninfected'.Get the data set from the [LHNCBC Malaria Dataset](https://lhncbc.nlm.nih.gov/LHC-downloads/downloads.html#malaria-datasets) OR (https://www.kaggle.com/datasets/iarunava/cell-images-for-detecting-malaria/data).")
 
 # 1. Load the ONNX Model (cached so it only loads once)
 @st.cache_resource
