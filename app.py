@@ -8,6 +8,9 @@ st.set_page_config(page_title="Malaria Cell Classifier", page_icon="🔬")
 st.title("🔬 Malaria Cell Classifier")
 st.write("Upload a blood cell image (PNG/JPG) to detect if it is 'Parasitized' or 'Uninfected'.Get the data set from the [LHNCBC Malaria Dataset](https://lhncbc.nlm.nih.gov/LHC-downloads/downloads.html#malaria-datasets) OR (https://www.kaggle.com/datasets/iarunava/cell-images-for-detecting-malaria/data).")
 
+# Version display
+st.caption(f"Streamlit version: {st.__version__}")
+
 # 1. Load the ONNX Model (cached so it only loads once)
 @st.cache_resource
 def load_model():
@@ -33,7 +36,7 @@ uploaded_file = st.file_uploader("Choose a cell image...", type=["png", "jpg", "
 
 if uploaded_file is not None:
     image = Image.open(uploaded_file)
-    st.image(image, caption='Uploaded Cell Image', width='stretch')
+    st.image(image, caption='Uploaded Cell Image', use_container_width=True)
     
     if st.button('Run Prediction'):
         with st.spinner('Analyzing...'):
